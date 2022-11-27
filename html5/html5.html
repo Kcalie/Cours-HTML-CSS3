@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Les balises html(5)</title>
+    <!---------------------------------pour ceux qui o,t internet explorer qui ne fonctionnent pas avec html5------------------------------>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <nav id="desktop">
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="mobile">
+            <select name="menu">
+                <option value="#">Acceuil</option>
+                <option value="#">CV</option>
+                <option value="#">Portfolio</option>
+                <option value="#">Contact</option>
+            </select>
+        </nav>
+
+    </header>
+        <section>
+            <article>
+                <h2>Titre de mon article</h2>
+                    <p>Découvre ma vidéo</p>
+      
+                    <video autoplay muted controls width="34%">
+                        <source src="video/phil.mp4" type="video/mp4">
+                        <p>votre navigateur ne prend pas en charge html5. passer sous firefox</p>
+                    </video>
+
+                    <video autoplay muted controls>
+                        <source src="video/Ryuk.mp4" type="video/mp4">
+                        <p>votre navigateur ne prend pas en charge html5. passer sous firefox</p>
+                    </video>
+
+                    <p>Musique</p>
+                    <audio controls>
+                        <source src="audio/DJ-Premier-Hate.mp3" type="audio/mpeg">
+                    </audio>
+<!--------------------------------------------------------PENSER A UTILISE POUR LE PROJET DE L'EXAMEN CAR IMPORTANT POUR LE REFERENCEMENT-------------------------------------------->
+                    
+                        <canvas></canvas><!--sert à créer des dessins dynamiquement sur le navigateur-->
+
+                    <aside>
+                        <h3>Fuck........</h3>
+                        <p>blablabla</p>
+                        <p>blablabla</p>
+                    </aside>
+
+            </article>
+        </section>
+    <footer>
+        <div class="col col1">
+            <nav class="desktop">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">CGU</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <select name="menu1">
+                    <option value="#">Mentions légales</option>
+                    <option value="#">CGU</option>
+                </select>
+            </nav>
+        </div>
+                <div class="col col2">
+                    <nav class="desktop">
+                        <ul>
+                            <li><a href="#">Acceuil</a></li>
+                            <li><a href="#">Mon CV</a></li>
+                            <li><a href="#">mon portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="mobile">
+                        <select name="menu2">
+                            <option value="#">Acceuil</option>
+                            <option value="#">Mon cv</option>
+                            <option value="#">mon portfolio</option>
+                        </select>
+                    </nav>
+                </div>
+        <div class="col col3">
+            <nav class="desktop">
+                <p>Vous visitez actuellement sur ordinateur</p>
+            </nav>
+            <nav class="mobile">
+                <p>Vous visitez actuellement sur mobile</p>      
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

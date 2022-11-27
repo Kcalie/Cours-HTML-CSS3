@@ -1,0 +1,10 @@
+details{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+summary{
+    font-weight: bold;
+}
+details[open]{
+    background-color: rgb(212, 130, 212);
+}

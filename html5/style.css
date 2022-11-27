@@ -1,0 +1,75 @@
+body{
+   /*background: linear-gradient(20deg,blue,yellow);*/
+   background: linear-gradient(yellow,rgb(80, 144, 180));
+}
+article{
+    background: linear-gradient(orange,black,blue,green);
+}
+article:hover{
+    background: linear-gradient(cyan,yellow,red,white);
+}
+#mobile, .mobile{
+    display: none;/*pour cacher le menu deroulant si ouvert sur un ecran pc*/
+}
+#desktop ul{
+    list-style: none;/*fait disparaitre les points*/
+    display: flex;
+}
+#desktop ul li{
+    padding:0 15px;/*espace les different menu (padding=marge interieur)(margin=exterieur)*/
+    font-size: 30px;
+}
+#desktop ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;/*enlever le soulignage*/
+    text-transform: capitalize;/*met une majuscule a tout les debut de phrase*/
+}
+#desktop ul li a:hover{
+    text-decoration: underline;/*souligne au passage souris*/
+    font-size: 25px;
+    color: chocolate;
+}
+.col{
+    display: inline-flex;/*met en ligne les col*/
+    width: 33%;
+}
+.col1 ul, .col2 ul{
+    list-style: none;
+}
+/*FOOTER CHANGE*/
+.desktop ul li{
+    font-size: 27px;
+}
+.desktop ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;/*enlever le soulignage*/
+    text-transform: capitalize;/*met une majuscule a tout les debut de phrase*/
+}
+.desktop ul li a:hover{
+    text-decoration: underline;/*souligne au passage souris*/
+    font-size: 25px;
+    color: chocolate;
+}
+
+@media all and (max-width:600px) {
+    body{
+        background: black;
+        color: white;
+    }
+    #mobile select, .mobile select{
+        width: 100%; /*agrandi les menu deroulant en mode mobile*/
+    }
+    video{
+        display: none;/*cache les videos*/
+    }
+    .col{
+        display: block; /*aligne et gere la taille des nav dans le footer*/
+        width: 100%;
+    }
+    #desktop, .desktop{
+        display: none;/*pour cacher l'accueil deroulant quand l'ecran et plus grand que 600px*/
+    }
+    #mobile, .mobile{
+        display:block;/*pour afficher l'accueil deroulant quand l'ecran passe en 600px*/
+    }
+}

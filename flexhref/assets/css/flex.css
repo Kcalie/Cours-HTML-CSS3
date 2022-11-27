@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 60, 235);
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/*pour tout couvrir*/
+    background-attachment: fixed;
+}
+marquee{
+    font-size: 3.0em;
+    font-weight: bolder;
+    color: red;
+
+}
+.formation-body{
+    background-image: url('../images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/*pour tout couvrir*/
+}
+.contact-body{
+    background-image: url('../images/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/*pour tout couvrir*/
+}
+header{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    height: auto;/*hauteur qui s'adapte au width*/
+}
+.logo, nav{
+    width: 20%;
+    height: auto;
+}
+/*nav{
+
+}*/
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 0 5%;
+}
+header a{
+    color: #fff;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.colonne1, .colonne2{
+    width: 50%;
+}
+footer{
+    display: flex;
+    background: white;
+    opacity: 75%;
+    /*position: absolute;/*Soluce 01*/
+    position: fixed;/*Soluce 02*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer:hover{
+    display: none;
+}
+footer div{
+    width: 30%;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    font-size: 17px;
+    color: #000;
+    line-height: 25px;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: red;
+    background-color: aqua;
+    font-size: 30px;
+    line-height: 60px;
+    /*display: none;*/
+}
+.footer2{
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: double;
+}
+.footer3{
+    display: flex;
+    justify-content: end;
+}
+footer ul li:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Page formation*/
+
+.formation{
+    display: block;
+    text-align: center;
+}
+.formation .col{
+    background: orangered;
+    border: 2px dotted black;
+    opacity: 80%;
+}
+.formation .col:first-child{
+    background: orchid;
+    opacity: 80%;
+}
+.formation .col:nth-child(3){
+    background: orange;
+    opacity: 80%;
+}
+.formation .col:nth-child(4){
+    background: rgb(19, 19, 197);
+    opacity: 80%;
+}
+.formation .col:last-child{
+    background: olivedrab;
+    opacity: 80%;
+}
+
+/*Page contact*/
+
+.contact .col:first-child{
+    width: 20%;
+}
+.contact .col {
+    display: flex;
+    justify-content: end;
+    width: 75%;
+
+}
+.contact .formulaire{
+    background: grey;
+    opacity: 2;
+}
+.formulaire .input label, .formulaire .input input, .formulaire .input textarea{
+    display: block;
+    margin: 10px;
+}
+.formulaire .input input, .formulaire .input textarea{
+    width: 80%;
+    height: 25px;
+    border: 2px dotted rgb(79, 79, 163);
+    border-radius: 10px;
+}
+.formulaire .input input:hover, .formulaire .input textarea:hover{
+    border: 5px solid green;
+    border-radius: 50px;
+    background: rgb(219, 209, 209);
+}
+button[name="submit"]{
+    background: rgb(150, 40, 150);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #fff;
+}
+button[type="reset"]{
+    background: rgb(40, 150, 117);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #fff;
+}
+button:hover{
+    background-color: rgb(11, 80, 57);
+}
+.info{
+    color: blue;
+}

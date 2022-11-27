@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="description de page HTML">
+        <link rel="stylesheet" href="style.css">
+        <title>Kevin Haraux</title>
+    </head>
+    <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" title="liens vers l'accueil">Accueil</a></li>
+                    </ul>
+                </nav>  
+            </header>
+
+       <div class="h1"><h1>Balise h1</h1></div>
+
+        <p>Ceci est un paragraphe</p>
+
+        <h2>Balise h2</h2>
+        <h3>Balise h3</h3>
+        <h4>Balise h4</h4>
+        <h5>Balise h5</h5>
+        <h6>Balise h6</h6>
+
+        <p id="para2">Ceci est un paragraphe <strong>avec un texte important</strong></p><!--strong = important pour le referencement-->
+
+        <ul>
+            <li class="blue">Element 1</li>
+            <li class="green">Element 2</li>
+            <li class="red">Element 3</li>
+        </ul>
+
+        <ol>
+            <li class="blue">Element 1</li>
+            <li class="green">Element 2</li>
+            <li class="red">Element 3</li>
+        </ol>
+
+        <dl>
+            <dd>HTML</dd>
+            <dt>c'est un super language</dt>
+        </dl>
+
+                <div class="question">
+                    <p>Question 1</p>
+                    <p class="reponse">reponse 1</p>
+                </div>
+
+                <div class="question">
+                    <p>Question 2</p>
+                    <p class="reponse">reponse 2</p>
+                </div>
+
+        <ol>
+            <li>Natation
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li><!--liste dans liste-->
+                <li>Element 3</li>
+            </ul>
+        </ol>
+
+        <a href="https://www.google.fr/">lien</a><br/>
+        <a href="mailto:kevin.haraux@gmail.com">envoyer un mail</a>
+        <a href="#para2" class="margin">je vais au paragraphe 2</a>
+
+        <table>
+            <thead>
+                <th>Nom</th>
+                <th>Prenom</th>
+            </thead>
+        <tbody>
+            <tr><!--tr=ligne-->
+                <td>Borges</td><!--tr=colone-->
+                <td>Corentin</td>
+            </tr>
+            <tr>
+                <td>Borges</td>
+                <td>Corentin</td>
+            </tr>
+        </tbody>
+        </table>
+        <br/>
+        <form method="POST" action="formulaire.php" enctype="multipart/form-data"><!--pour pouvoir recup (envoyer) le fichier-->
+            <input type="text" name="nom" placeholder="Votre nom" required/>
+            <br/>
+            <input type="password" name="motdepasse" placeholder="Votre mot de passe" required/>
+            <br/>
+            <input type="checkbox" name="cgv" value="oui" />
+            <label for="cgv">J'accepte les cgv</label>
+            <br/>
+            <input type="radio" name="newsletter" value="oui" checked="checked"/><label>oui</label> 
+            <input type="radio" name="newsletter" value="non" /><label>non</label> 
+            <label for="newsletter">J'accepte la newsletter</label>
+            <br />
+            <select name="pays">
+                <option value="france">France</option>
+                <option value="angleterre">Angleterre</option>
+                <option value="allemagne" selected="selected">Allemagne</option>
+            </select>
+            <br/>
+            <select name="liste2" multiple="multiple">
+                <option value="valeur1">valeur1</option>
+                <option value="valeur2">valeur2</option>
+                <option value="valeur3">valeur3</option>
+            </select>
+            <br/>
+            <textarea name="message" required></textarea>
+            <br/>
+            <input type="file" name="cv" />
+            <label for="cv">Votre CV</label>
+            <br/>
+     <button type="submit" name="submit">Send</button> <!--HTML5-->
+     <button type="reset" name="reset">Supprimer</button>
+     <button type="button" name="bouton">ne sers a rien</button>
+            <!--<input type="submit" name="submit" value="Send">HTML4-->
+
+        </form>
+
+        <footer>
+            <div class="col1">
+            <ul>
+                <li><a href="contact.html" titre="liens vers contact">contact</a></li>
+                <li><a href="mentions.html" titre="liens vers mentions légales">Mentions légales</a></li>
+            </ul>
+            </div>
+            <div class="col2">
+            <ul>
+                <li><a href="liens1.html" titre="lien1">lien1</a></li>
+                <li><a href="liens2.html" titre="lien2">lien2</a></li>
+                <li><a href="liens3.html" titre="lien3">lien3</a></li>
+                <li><a href="liens4.html" titre="lien4">lien4</a></li>
+                <li><a href="liens5.html" titre="lien5">lien5</a></li>
+                <li><a href="liens6.html" titre="lien6">lien6</a></li>
+            </ul>
+            </div>
+            <div class="col3">
+                <p>ce site est développé par les stagiaires de la CCI de Bourges</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

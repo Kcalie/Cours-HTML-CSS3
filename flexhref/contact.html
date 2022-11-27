@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/flex.css">
+    <title>Document</title>
+</head>
+<body class="contact-body">
+    
+    <header>
+
+        <div class="logo">
+            <img src="assets/images/cci-cher2.png" alt="Logo CCI1">
+        </div>
+
+        <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="formation.html">Nos formation</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+        </ul>
+        </nav>
+
+    </header>
+
+    <div class="container contact">
+        <div class="col">
+            <div class="info">
+                <h2>Nous contacter</h2>
+                <p><b>Tel :</b> 06 10 10 10 10</p>
+                <p><b>Adresse : </b><br>Avenue d'issoudun<br>18000 Bourges</p>
+                <p><b>Email :</b> Formulaire</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="formulaire">
+                <form name="contact" method="POST" action="">
+                    <div class="input">
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" required placeholder="Votre nom">
+                    </div>
+                    <div class="input">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" required placeholder="Votre prénom">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" required placeholder="Votre mail">
+                    </div>
+                    <div class="input">
+                        <label for="sujet">Sujet :</label>
+                        <input type="text" name="sujet" id="sujet" required placeholder="">
+                    </div>
+                    <div class="input">
+                        <label for="sujet">Message :</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <div class="input">
+                        <button type="reset" name="reset">Effacer</button>
+                        <button type="Submit" name="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer1">
+            <ul>
+                <li><a href="http://www.cher.cci.fr" target="_blank">Site de la CCI</a></li>
+                <li><a href="https://www.discord.com" target="_blank">Discord</a></li>
+                <li><a href="https://www.microsoft.com" target="_blank">Microsoft</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+            </ul>
+        </div>
+
+        <div class="footer2">
+            <p>
+                La CCI propose un ensemble de formation numérique pour former les développeurs de demain.
+            </p>
+        </div>
+
+        <div class="footer3">
+                <div class="image">
+                    <img src="assets/images/cci-cher2.png" alt="Logo CCI">
+                </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
